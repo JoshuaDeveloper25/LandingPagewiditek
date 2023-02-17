@@ -1,0 +1,10 @@
+Tipografías 
+
+Raleway bold
+Raleway medium
+
+
+Paleta
+
+rosa: #fc5491
+naranja: #f86f64
