@@ -2,319 +2,455 @@
 
 /* Paletas */
 :root {
-    --color-rosa: #fc5491;
-    --color-naranja: #f86f64;
-    --color-blanco: #ffffff;
+  --color-rosa: #fc5491;
+  --color-naranja: #f86f64;
+  --color-blanco: #ffffff;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-*, *:before, *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    min-height: 100vh;
-    overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Utilities Classes */
 .container {
-    width: min(100%, 1200px);
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 2rem;
+  width: min(100%, 1200px);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 2rem;
 }
 
 .color-rosa {
-    color: #fc5491;
+  color: #fc5491;
 }
 
 .color-naranja {
-    color: #f86f64;
+  color: #f86f64;
 }
 
 .pt-10 {
-    padding-top: 10rem;
+  padding-top: 10rem;
 }
 
 .pt-3 {
-    padding-top: 4.5rem;
+  padding-top: 4.5rem;
 }
 
 .mt-5 {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .mt-4 {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .mt-2 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .mb-2 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-8 {
-    margin-bottom: 8rem;
+  margin-bottom: 8rem;
 }
 
 .fs-sm {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .fw-300 {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .fw-700 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .fw-500 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .fw-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-right {
-    text-align: right;
+  text-align: right;
+}
+
+.d-block {
+  display: block;
 }
 
 /* Componentes */
 .btn {
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 1.2rem 2.5rem;
-    font-size: 1.5rem;
-}   
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.5rem;
+}
 .btn.btn-pink {
-    background: var(--color-rosa);
-    color: var(--color-blanco);
-    border-radius: 2rem;
+  background: var(--color-rosa);
+  color: var(--color-blanco);
+  border-radius: 2rem;
 }
 
 /* Header */
 .header {
-    position: relative;
-    z-index: 10;
-    color: var(--color-blanco);
-} 
+  position: relative;
+  z-index: 10;
+  color: var(--color-blanco);
+}
 
 .header__bg {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    height: 90%;
-    width: 100%;
-}   
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 90%;
+  width: 100%;
+}
 
 .header .container {
-    width: min(100%, 650px);
+  width: min(100%, 650px);
 }
 
 .video {
-    background: #cfcfcf;
-    width: 100%;
-    height: 30rem;
+  background: #cfcfcf;
+  width: 100%;
+  height: 30rem;
 }
 
 /* Sección de Dieta*/
 .seccion-dieta h1 {
-    color: var(--color-rosa);
+  color: var(--color-rosa);
 }
 
 .dieta-historia {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.4rem;
 }
 
 .dieta {
-    box-shadow: 0px 0px 30px 3px  rgba(155, 154, 154, 0.75);
-    border-radius: .5rem;
-    padding: 1.7rem;
+  box-shadow: 0px 0px 30px 3px rgba(155, 154, 154, 0.75);
+  border-radius: 0.5rem;
+  padding: 1.7rem;
 }
 
 .dieta img {
-    padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .dieta p {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 @media (min-width: 600px) {
-    .dieta-historia {
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  .dieta-historia {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    .dieta {
-        width: 45%;
-    }
+  .dieta {
+    width: 45%;
+  }
 
-    .d-block-md {
-        display: block;
-    }
+  .d-block-md {
+    display: block;
+  }
 }
 
 @media (min-width: 937px) {
-    .dieta-historia {
-        flex-wrap: nowrap;
-    }
+  .dieta-historia {
+    flex-wrap: nowrap;
+  }
 
-    .dieta {
-        width: unset;
-    }
+  .dieta {
+    width: unset;
+  }
 }
 
 /* Metodo Venus */
 .seccion-venus.container {
-    width: min(100%, 950px);
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 2rem;
+  width: min(100%, 950px);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 2rem;
 }
 
 .flex-venus {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .venus-content {
-    flex-basis: 56%;
+  flex-basis: 56%;
 }
 
 .venus-img img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .venus-img {
-    flex: 1;
+  flex: 1;
 }
 
 .venus-lists {
-    color: var(--color-rosa);
-    margin-left: 1.7rem;
+  color: var(--color-rosa);
+  margin-left: 1.7rem;
 }
 
 .venus-content h2 {
-    color: var(--color-naranja);
-    line-height: 1.4;
-    font-size: 3rem;
+  color: var(--color-naranja);
+  line-height: 1.4;
+  font-size: 3rem;
 }
 
 @media (min-width: 500px) {
-    .flex-venus {
-        flex-direction: row;
-    }
+  .flex-venus {
+    flex-direction: row;
+  }
 }
 
 /* Beneficios */
 .flex-beneficios {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-beneficios > * {
+  flex: 1;
 }
 
 .beneficios-img {
-    width: 100%;
+  position: relative;
+  overflow: hidden;
 }
-    
+
 .beneficios-img img {
-    width: 45%;
-    border-radius: .3rem;
+  width: 100%;
+  border-radius: 0.3rem;
+
+  object-fit: cover;
+
+  top: 50%;
+  left: 50%;
+}
+
+.beneficios-listas {
+	margin-left: 1.7rem;
+}
+
+@media (min-width: 380px) {
+  .beneficios-img {
+    min-height: 35rem;
+  }
+
+  .beneficios-img img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 25rem;
+  }
+
+  .beneficios-img img:first-child {
+    transform: translate(-80%, -60%);
+  }
+
+  .beneficios-img img:last-child {
+    transform: translate(-10%, -40%);
+  }
+}
+
+@media (min-width: 700px) {
+  .flex-beneficios {
+    flex-direction: row;
+    gap: 5rem;
+  }
 }
 
 /* Método Venus */
 .metodo-venus {
-    background: black;
-    color: var(--color-blanco);
+  position: relative;
+  color: var(--color-blanco);
+  z-index: 10;
+  padding: 10rem 0;
+  background: linear-gradient(to top, #fc5491, #f86f64);
+}
+
+.metodo-venus-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  display: none;
+}
+
+.metodo-container {
+  display: grid;
+  gap: 3rem;
+}
+
+.metodo-container > div:not(:first-child) {
+  border: 0.1px solid var(--color-blanco);
+  border-radius: 5px;
+  padding: 3rem 1.5rem;
+}
+
+.metodo-container > div img {
+  height: 7rem;
+}
+
+@media (min-width: 56.25em) {
+  .metodo-venus {
+    background-color: transparent;
+  }
+
+  .metodo-venus-bg {
+    display: unset;
+  }
+}
+
+@media (min-width: 31.25em) {
+  .metodo-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 50em) {
+  .metodo-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 56.25em) {
+  .metodo-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* Recomendacion de Venus */
 .recomendacion-lists li {
-    list-style: none;
-    line-height: 1.9;
+  list-style: none;
+  line-height: 1.9;
 }
 
 /* Aprobacion de Venus */
 .flex-aprobacion {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 @media (min-width: 580px) {
-    .flex-aprobacion {
-        flex-direction: row;
-    }
+  .flex-aprobacion {
+    flex-direction: row;
+  }
 }
 
 /* Footer */
 .footer {
-    color: var(--color-blanco);
-    position: relative;
-    z-index: 10;
+  color: var(--color-blanco);
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(to top, #fc5491, #f86f64);
 }
 
 .footer-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  display: none;
 }
 
 .footer ul {
-    display: flex;
-    gap: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .footer ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .footer-logo {
-    align-self: center;
+  align-self: center;
 }
 
 .footer-flex {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+@media (min-width: 570px) {
+  .footer-flex {
     justify-content: space-between;
-    padding-bottom: 2rem;
-    min-height: 15rem;
+    flex-direction: row;
     align-items: end;
+  }
+}
+
+@media (min-width: 51.25em) {
+  .footer {
+    background-color: transparent;
+  }
+
+  .footer-flex {
+    min-height: 15rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
     height: 100%;
-    gap: 2rem;
+  }
+
+  .footer-bg {
+    display: unset;
+  }
 }
