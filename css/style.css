@@ -5,6 +5,7 @@
   --color-rosa: #fc5491;
   --color-naranja: #f86f64;
   --color-blanco: #ffffff;
+  --color-azul: #00458f;
 }
 
 html {
@@ -36,19 +37,19 @@ body {
 }
 
 .color-rosa {
-  color: #fc5491;
+  color: var(--color-rosa);
 }
 
 .color-naranja {
-  color: #f86f64;
+  color: var(--color-naranja);
 }
 
 .pt-10 {
   padding-top: 10rem;
 }
 
-.pt-3 {
-  padding-top: 4.5rem;
+.pt-2 {
+  padding-top: 2rem;
 }
 
 .mt-5 {
@@ -108,12 +109,19 @@ body {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  padding: 1.2rem 2.5rem;
-  font-size: 1.5rem;
+  padding: 1.2rem 4rem;
+  font-size: 2.2rem;
+  font-weight: bold;
 }
-.btn.btn-pink {
-  background: var(--color-rosa);
+
+.btn-md {
+  font-size: 2rem;
+  padding: 1.2rem 2.5rem;
+}
+
+.btn.btn-blue {
   color: var(--color-blanco);
+  background: var(--color-azul);
   border-radius: 2rem;
 }
 
@@ -137,6 +145,11 @@ body {
 
 .header .container {
   width: min(100%, 650px);
+}
+
+.header p {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /* Sección de Dieta*/
@@ -407,21 +420,29 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-
   display: none;
 }
 
 .footer ul {
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer ul li {
   list-style: none;
+  padding: 2rem;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: var(--color-blanco);
 }
 
 .footer-logo {
-  align-self: center;
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .footer-flex {
@@ -431,6 +452,12 @@ body {
   gap: 2rem;
   padding: 3rem;
   text-align: center;
+}
+
+@media (min-width: 38.12500em) {
+  .footer ul {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 35.625em) {
