@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700;900&display=swap");
 
 /* Paletas */
 :root {
@@ -136,6 +136,14 @@ body {
   color: var(--color-blanco);
   background: var(--color-azul);
   border-radius: 2rem;
+}
+
+.btn.btn-pink {
+  color: var(--color-blanco);
+  background: var(--color-rosa);
+  border-radius: 4rem;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 
 .vimeoBox {
@@ -551,4 +559,30 @@ body {
 .felicitacion .bg-grey {
   background: #8f8e8e;
   height: 30rem;
+}
+
+/* Pagina de Agradecimiento */
+.gracias {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem;
+  line-height: 1.7;
+}
+
+.gracias .titulo-gracias2 {
+  font-size: 3.7rem;
+  font-weight: 900;
+}
+
+.gracias .sobretitulo-gracias2 {
+  font-size: 3rem;
+}
+
+.gracias.container-gracias2 {
+  width: min(50%, 600px);
+  margin: 0rem auto;
+}
+
+.gracias .gracias2-parrafo {
+  font-weight: normal;
+  font-size: 1.7rem;
 }
