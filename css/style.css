@@ -250,13 +250,13 @@ body {
 }
 
 .venus-content {
-  flex-basis: 56%;
+  flex-basis: 60%;
 }
 
 .venus-img img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 .venus-img {
